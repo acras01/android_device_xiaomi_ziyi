@@ -1,1 +1,1 @@
-require board=taro|cupid
+require board=taro|ziyi

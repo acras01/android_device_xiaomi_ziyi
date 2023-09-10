@@ -8,8 +8,8 @@
 
 set -e
 
-export DEVICE=cupid
-export DEVICE_COMMON=sm8450-common
+export DEVICE=ziyi
+export DEVICE_COMMON=sm7450-common
 export VENDOR=xiaomi
 
 "./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"

@@ -5,10 +5,10 @@
 #
 
 # Inherit from xiaomi sm8450-common
-$(call inherit-product, device/xiaomi/sm8450-common/common.mk)
+$(call inherit-product, device/xiaomi/sm7450-common/common.mk)
 
 # Inherit from the proprietary version
-$(call inherit-product, vendor/xiaomi/cupid/cupid-vendor.mk)
+$(call inherit-product, vendor/xiaomi/ziyi/ziyi-vendor.mk)
 
 # Audio
 PRODUCT_COPY_FILES += \

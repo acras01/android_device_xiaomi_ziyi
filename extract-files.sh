@@ -8,7 +8,7 @@
 
 function blob_fixup() {
     case "${1}" in
-        vendor/etc/camera/cupid_enhance_motiontuning.xml|vendor/etc/camera/cupid_motiontuning.xml)
+        vendor/etc/camera/ziyi_enhance_motiontuning.xml|vendor/etc/camera/ziyi_motiontuning.xml)
             sed -i 's/xml=version/xml version/g' "${2}"
             ;;
         vendor/etc/camera/pureShot_parameter.xml|vendor/etc/camera/pureView_parameter.xml)
@@ -25,8 +25,8 @@ fi
 
 set -e
 
-export DEVICE=cupid
-export DEVICE_COMMON=sm8450-common
+export DEVICE=ziyi
+export DEVICE_COMMON=sm7450-common
 export VENDOR=xiaomi
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
